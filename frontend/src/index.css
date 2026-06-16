@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+.navbar {
+  background-color: #1f2937;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar button {
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #ef4444;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container,
+.form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form-container {
+  max-width: 400px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.message {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.book-card {
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  margin-top: 0;
+}
+
+.book-card a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .book-list {
+    grid-template-columns: 1fr;
+  }
+
+  .container,
+  .form-container {
+    margin: 20px;
+  }
+
+  .navbar a,
+  .navbar button {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+}
